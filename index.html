@@ -1,5 +1,28 @@
-<!DOCTYPE html>
 <html>
-    <h1> JavaScript Practice</h1>
-    
-</html>
+    <head>
+        <title>CodeAcademy</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+
+<p id="demo"></p>
+<script>
+function convertToF(celcius){
+  fahrenheit = (celcius + 9/5) + 32;
+  return fahrenheit;
+};
+document.getElementById("demo").innerHTML = convertToF(30);
+
+</script>
+
+
+<!--<script>
+<p id="demo"></p>
+function myFunction(p1, p2) {
+    return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(40, 30);
+</script>-->
+
+    </body>
+    </html>
