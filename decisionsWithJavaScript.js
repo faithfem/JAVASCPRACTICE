@@ -88,3 +88,55 @@ let favoritePhrase = 'Love That!';
 favoritePhrase === 'Love That!' ?
 console.log('I love that!'):
 console.log("I don't love that!");*/
+
+//JAVASCRIPT FUNCTIONS. FIRST CODE BELOW WITH CONST WORKS SAME AS ONE FURTHER BELOW WITH VAR. SO WHY IS ONE PREFERABLE & WHICH ONE?
+/*let calculatorIsOn = false;
+
+const pressPowerButton = () => {
+  if (calculatorIsOn) {
+    console.log('Calculator turning off.');
+    calculatorIsOn = false;
+  } else {
+    console.log('Calculator turning on.');
+    calculatorIsOn = true;
+  }
+};
+
+pressPowerButton();
+// Output: Calculator turning on.
+
+pressPowerButton();
+// Output: Calculator turning off.*/
+
+var calculatorIsOn = true;
+
+var pressPowerButton = () => {
+  if (calculatorIsOn) {
+    console.log('Calculator turns off.');
+    calculatorIsOn = false;
+  } else {
+    console.log('Calculator turns on.');
+    calculatorIsOn = true;
+  }
+};
+
+pressPowerButton();
+// Output: Calculator turning on.
+
+pressPowerButton();
+// Output: Calculator turning off.
+
+var orderTaken = true;
+
+var takeOrder = () => {
+if (orderTaken) {
+  console.log("Order complete");
+  orderTaken = false;
+}else {
+  console.log("Order Pizza.");
+  orderTaken = true;
+}
+};
+
+takeOrder();
+takeOrder();
