@@ -44,3 +44,26 @@ var myArray = [["John", 23], ["cat", 2]];
 var removedFromMyArray = myArray.pop();
 console.log(myArray);
 console.log(removedFromMyArray);
+
+//REUSABLE JAVASCRIPT WITH FUNCTIONS
+function functionName() {
+  console.log("Hello World");
+}
+functionName(); //IF YOU DON'T WRITE THIS, NO RESULT WILL PRINT TO console
+
+//FUNCTIONS WITH ARGUMENTS
+function functionWithArgs(a, b){
+  console.log(a + b);
+}
+functionWithArgs(3,4);
+
+//FUNCTIONS WITH RETURN
+function timesFive(num) {
+  return num * 5;
+}
+console.log(timesFive(10));
+
+/*CODE BELOW DOESN'T WORK. IT'S FROM CODEACADEMY #7 OF 8 JAVASCRIPT
+let myName = "Faith";
+let myCity = "Providence";
+console.log("My name is ${myName}. My favorite city is ${myCity}.");*/
