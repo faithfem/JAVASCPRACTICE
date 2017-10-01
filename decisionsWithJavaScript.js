@@ -140,3 +140,60 @@ if (orderTaken) {
 
 takeOrder();
 takeOrder();
+
+let orderTaken = true;
+
+const takeOrder = (topping) => {
+if (orderTaken) {
+  console.log("Order complete");
+  orderTaken = false;
+}else {
+  console.log("Order: Pizza topped with " + topping);
+  orderTaken = true;
+}
+};
+
+takeOrder("cheese");
+takeOrder("mushrooms");
+
+
+//MORE THAN ONE PARAMETER
+const takeOrder = (topping, crustType) => {
+  console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+};
+
+takeOrder('mushroom', 'thin crust');
+takeOrder('spinach', 'whole wheat');
+takeOrder('pepperoni', 'brooklyn style');
+
+
+//USING RETURN INSTEAD OF CONSOLE.LOG
+
+let orderCount = 0;
+//Inside the takeOrder() function, set orderCount equal to orderCount plus 1
+const takeOrder = (topping, crustType) => {
+  orderCount++;
+  console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+};
+
+takeOrder('mushroom', 'thin crust');
+takeOrder('spinach', 'whole wheat');
+takeOrder('pepperoni', 'brooklyn style');
+
+//On a new line, beneath the closing brackets of the takeOrder function,
+//declare a new function named getSubTotal that has one parameter named itemCount
+
+//Inside the getSubTotal() function's block, use return to output the itemCount
+//multiplied by 7.5
+
+const getSubTotal = (itemCount) => {
+  return itemCount * 7.5;
+};
+
+console.log(getSubTotal(orderCount));
+//On the last line of your program, after
+//the takeOrder() function calls, call the getSubTotal() function inside a
+//console.log statement.
+
+//getSubTotal has a parameter that represents the number of items ordered.
+//Pass in the orderCount as an argument when making the function call.
