@@ -126,7 +126,7 @@ pressPowerButton();
 pressPowerButton();
 // Output: Calculator turning off.
 
-var orderTaken = true;
+/*var orderTaken = true;
 
 var takeOrder = () => {
 if (orderTaken) {
@@ -164,7 +164,7 @@ const takeOrder = (topping, crustType) => {
 
 takeOrder('mushroom', 'thin crust');
 takeOrder('spinach', 'whole wheat');
-takeOrder('pepperoni', 'brooklyn style');
+takeOrder('pepperoni', 'brooklyn style');*/
 
 
 //USING RETURN INSTEAD OF CONSOLE.LOG
